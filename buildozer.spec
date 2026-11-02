@@ -1,25 +1,24 @@
 [app]
-title = Ghost App
-package.name = ghostapp
-package.domain = com.ghost.app
+title = The Ghost
+package.name = theghost
+package.domain = com.theghost.app
+
 source.dir = .
-source.include_exts = py,png,jpg,kv,atlas,ttf
-version = 1.0
-requirements = python3,kivy==2.2.0,kivymd==1.1.1,pillow
+source.include_exts = py,png,jpg,kv,atlas
+version = 0.1
+requirements = python3,kivy==2.2.0
 orientation = portrait
 fullscreen = 0
 
 [buildozer]
 log_level = 2
-warn_on_root = 1
 
 [app:android]
+p4a.bootstrap = sdl2
+p4a.branch = master
 android.permissions = INTERNET
 android.api = 33
 android.minapi = 21
-android.ndk = 25b
-android.build_tools = 33.0.1
+android.ndk = 23b
 android.accept_sdk_license_agreement = True
-android.archs = arm64-v8a
-p4a.bootstrap = sdl2
-p4a.branch = master
+android.archs = arm64-v8a, armeabi-v7a
