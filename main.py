@@ -1,8 +1,8 @@
-from kivymd.app import MDApp
-from kivymd.uix.label import MDLabel
+from kivy.app import App
+from kivy.uix.label import Label
 
-class MyApp(MDApp):
+class MyApp(App):
     def build(self):
-        return MDLabel(text="Meri Pehli App", halign="center")
+        return Label(text="The Ghost App")
 
 MyApp().run()
